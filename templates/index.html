@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"  href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    
+    <div class="login">
+        <div class="f1">
+            <h1>
+                AUDIT INCOME PREDICTION
+            </h1>
+            </div>
+<form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="capital-gain	" placeholder="capital-gain	" required="required" /><br>
+      <input type="text" name="capital-loss	" placeholder="capital-loss	" required="required" /><br>
+      <input type="text" name="hours-per-week " placeholder="hours-per-week	" required="required" /><br>
+      <input type="text" name="education_e	" placeholder="education_e	" required="required" /><br>
+      <input type="text" name="workclass_e	" placeholder="workclass_e	" required="required" /><br>
+      <input type="text" name="occupation_e" placeholder="occupation_e" required="required" /><br>
+      <input type="text" name="country_e" placeholder="country_e" required="required" /><br>
+
+      
+
+     
+      <div class="f3">
+      <button type="submit" class="button">Predict</button>
+      </div>
+  </form>
+  <br>
+  <br>
+ 
+  
+</div>
+<div class="f2">
+<h2>{{prediction_text}}</h2>
+</div>
+</body>
+</html>
