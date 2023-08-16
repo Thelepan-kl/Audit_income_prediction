@@ -12,28 +12,106 @@
             </h1>
             </div>
 <form action="{{ url_for('predict')}}"method="post">
-      <input type="text" name="capital-gain	" placeholder="capital-gain	" required="required" /><br>
-      <input type="text" name="capital-loss	" placeholder="capital-loss	" required="required" /><br>
-      <input type="text" name="hours-per-week " placeholder="hours-per-week	" required="required" /><br>
-      <input type="text" name="education_e	" placeholder="education_e	" required="required" /><br>
-      <input type="text" name="workclass_e	" placeholder="workclass_e	" required="required" /><br>
-      <input type="text" name="occupation_e" placeholder="occupation_e" required="required" /><br>
-      <input type="text" name="country_e" placeholder="country_e" required="required" /><br>
-
-      
-
-     
+      <input type="text" name="capital-gain" placeholder="capital-gain	" required="required" /><br>
+      <input type="text" name="capital-loss" placeholder="capital-loss	" required="required" /><br>
+      <input type="text" name="hours-per-week" placeholder="hours-per-week	" required="required" /><br>
+      <select name="education_e" required="required">
+        <option value=0>Preschool</option>
+        <option value=1>1st-4th</option>
+        <option value=2>5th-6th</option>
+        <option value=3>7th-8th</option>
+        <option value=4>9th</option>
+        <option value=5>10th</option>
+        <option value=6>11th</option>
+        <option value=7>12th</option>
+        <option value=8>HS-grad</option>
+        <option value=9>Some-college</option>
+        <option value=10>Assoc-acdm</option>
+        <option value=11>Assoc-voc</option>
+        <option value=12>Bachelors</option>
+        <option value=13>Masters</option>
+        <option value=14>Doctorate</option>
+        <option value=15>Prof-school</option>
+    </select><br>  
+      <select id="workclass_e " required="required">
+        <option value=0>Self-emp-not-inc</option>
+        <option value=1>Private</option>
+        <option value=2>Federal-gov</option>
+        <option value=3>Local-gov</option>
+        <option value=4>Self-emp-inc</option>
+        <option value=5>Without-pay</option>
+        <option value=6>Never-worked</option>
+      </select><br>
+      <select name="occupation_e" required="required">
+        <option value=0>Adm-clerical</option>
+        <option value=1>Exec-managerial</option>
+        <option value=2>Handlers-cleaners</option>
+        <option value=3>Prof-specialty</option>
+        <option value=4>Other-service</option>
+        <option value=5>Sales</option>
+        <option value=6>Transport-moving</option>
+        <option value=7>Farming-fishing</option>
+        <option value=8>Machine-op-inspct</option>
+        <option value=9>Tech-support</option>
+        <option value=10>Craft-repair</option>
+        <option value=11>Protective-serv</option>
+        <option value=12>Armed-Forces</option>
+        <option value=13>Priv-house-serv</option>
+      </select><br>
+      <select name="country_e" required="required">
+        <option value=0>United-States</option>
+        <option value=1>Cuba</option>
+        <option value=2>Jamaica</option>
+        <option value=3>India</option>
+        <option value=4>Mexico</option>
+        <option value=5>South</option>
+        <option value=6>Puerto-Rico</option>
+        <option value=7>Honduras</option>
+        <option value=8>England</option>
+        <option value=9>Canada</option>
+        <option value=10>Germany</option>
+        <option value=11>Iran</option>
+        <option value=1>Philippines</option>
+        <option value=1>Italy</option>
+        <option value=1>Poland</option>
+        <option value=3>Columbia</option>
+        <option value=3>Cambodia</option>
+        <option value=3>Thailand</option>
+        <option value=3>Ecuador</option>
+        <option value=3>Laos</option>
+        <option value=4>Taiwan</option>
+        <option value=4>Haiti</option>
+        <option value=4>Portugal</option>
+        <option value=4>Dominican-Republic</option>
+        <option value=4>El-Salvador</option>
+        <option value=3>France</option>
+        <option value=3>Guatemala</option>
+        <option value=3>China</option>
+        <option value=3>Japan</option>
+        <option value=3>Yugoslavia</option>
+        <option value=3>Peru</option>
+        <option value=3>Outlying-US(Guam-USVI-etc)</option>
+        <option value=3>Scotland</option>
+        <option value=3>Trinadad&Tobago</option>
+        <option value=3>Greece</option>
+        <option value=3>Nicaragua</option>
+        <option value=3>Vietnam</option>
+        <option value=3>Hong</option>
+        <option value=3>Ireland</option>
+        <option value=3>Hungary</option>
+        <option value=3>Holand-Netherlands</option>
+      </select><br>
       <div class="f3">
-      <button type="submit" class="button">Predict</button>
-      </div>
-  </form>
-  <br>
-  <br>
- 
-  
-</div>
-<div class="f2">
-<h2>{{prediction_text}}</h2>
-</div>
+        <button type="submit" class="button">Predict</button>
+        </div>
+    </form>
+    <br>
+    <br>
+   
+    
+  </div>
+  <div class="f2">
+  <h2>{{prediction_text}}</h2>
+  </div>
 </body>
 </html>
