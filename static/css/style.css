@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(60deg,#268bba,#77d551,rgb(105, 137, 16));
+}
+.button{
+    background-color:rgb(10, 34, 72);
+    color:rgb(255, 255, 255);
+    padding-right: 40px;
+    padding-left: 41px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border:rgb(0, 0, 0) 2px solid;
+    border-radius:10px;
+    box-shadow: 5px 5px 5px black;
+}
+.button:hover{
+    background: rgb(48, 116, 42);
+    color: rgb(0, 0, 0);
+}
+.container-1 div{
+border:2px #0c0c0c solid;
+padding:10px;
+}
+.container-1{
+    padding-left: 10%;
+    padding-top: 5%;
+    margin: auto;
+    display:flex;
+}
+.f3{
+    padding-top: 5%;
+    padding-left:45%;
+}
+.f1{
+    color: rgb(235, 234, 234);
+    text-shadow: rgb(0, 0, 0) 5px 5px 4px;
+    padding-left:35%;
+}
+.f2{
+    margin: auto;
+    padding-left: 32%;
+    text-shadow: #ffffff 5px 3px 2px;
+}

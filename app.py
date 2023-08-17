@@ -31,9 +31,9 @@ def predict():
         # Make the prediction
         output = xgmodel.predict(input_data_reshaped)
         if output[0] == 0:
-            A="<=50K"
+            A="LESS THAN OR EQUAL TO 50K"
         else:
-            A=">50K"
+            A="GREATER THAN 50K"
 
         # Return the prediction
         return render_template("index.html", prediction_text="YOUR INCOME IS {}".format(A))

@@ -11,10 +11,20 @@
                 AUDIT INCOME PREDICTION
             </h1>
             </div>
+
+
 <form action="{{ url_for('predict')}}"method="post">
+  <div class="container-1">
+      <div class="box-1">
       <input type="text" name="capital-gain" placeholder="capital-gain	" required="required" /><br>
+      </div>
+      <div class="box-2">
       <input type="text" name="capital-loss" placeholder="capital-loss	" required="required" /><br>
+      </div>
+      <div class="box-3">
       <input type="text" name="hours-per-week" placeholder="hours-per-week	" required="required" /><br>
+      </div>
+      <div class="box-4">
       <select name="education_e" required="required">
         <option value=0>Preschool</option>
         <option value=1>1st-4th</option>
@@ -32,7 +42,9 @@
         <option value=13>Masters</option>
         <option value=14>Doctorate</option>
         <option value=15>Prof-school</option>
-    </select><br>  
+    </select><br> 
+    </div>
+    <div class="box-5">
       <select id="workclass_e " required="required">
         <option value=0>Self-emp-not-inc</option>
         <option value=1>Private</option>
@@ -42,6 +54,8 @@
         <option value=5>Without-pay</option>
         <option value=6>Never-worked</option>
       </select><br>
+    </div>
+    <div class="box-6">
       <select name="occupation_e" required="required">
         <option value=0>Adm-clerical</option>
         <option value=1>Exec-managerial</option>
@@ -58,6 +72,8 @@
         <option value=12>Armed-Forces</option>
         <option value=13>Priv-house-serv</option>
       </select><br>
+    </div>
+    <div class="box-7">
       <select name="country_e" required="required">
         <option value=0>United-States</option>
         <option value=1>Cuba</option>
@@ -101,9 +117,12 @@
         <option value=3>Hungary</option>
         <option value=3>Holand-Netherlands</option>
       </select><br>
+      </div>
+    </div>
       <div class="f3">
         <button type="submit" class="button">Predict</button>
         </div>
+      
     </form>
     <br>
     <br>
